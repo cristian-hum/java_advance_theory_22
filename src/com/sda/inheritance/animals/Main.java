@@ -12,5 +12,18 @@ public class Main {
             System.out.println(animal.getName());
             animal.yieldVoice();
         }
+
+        //creare obiect din clasa abstracta, cu override metoda abstracta
+        Animal a = new Animal("yogi", 10, "M", "cool", 15) {
+            @Override
+            public void yieldVoice() {
+                System.out.println("generic animal voice");
+            }
+        };
+
+        System.out.println(a);
     }
+
+
+
 }

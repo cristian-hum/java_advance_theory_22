@@ -54,4 +54,15 @@ public abstract class Animal {
     // o alta implementare, in clasa Dog afiseaza "ham ham"
     // iar in clasa Cat afiseaza "miau miau"
     public abstract void yieldVoice();
+
+    @Override
+    public String toString() {
+        return "Animal{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", gender='" + gender + '\'' +
+                ", race='" + race + '\'' +
+                ", weight=" + weight +
+                '}';
+    }
 }
