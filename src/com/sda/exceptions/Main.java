@@ -6,9 +6,12 @@ public class Main {
     public static void main(String[] args) {
         // TEORIE
         // throw - se foloseste atunci cand dorim sa aruncam o exceptie
+        //  il folosesti in interiorul unei metode, deobicei dupa un if
         // throw new Exception("Mesajul vostru")
 
-        // throws - se foloseste in semnatura metodei
+        // throws - se foloseste in semnatura metodei,
+        // te informeaza ce fel de exceptie specifica poate arunca metoda
+        // este indicat sa folosesti exceptia indicata in catch
 //        double diffBetweenTwoNumbers(int a, int b) throws Exception {}
 
 
@@ -26,9 +29,9 @@ public class Main {
         System.out.println("----------------------------------");
 
         try {
-            int x = 5 / 0;
+//            int x = 5 / 0;
 
-            System.out.println(x);
+//            System.out.println(x);
 
             String name = "Georgel";
             if(name.equals("Georgel")) {
@@ -57,6 +60,7 @@ public class Main {
 
         System.out.println("Bye bye");
 
+        System.out.println("----------------------------------");
 
         Car car = new Car();
         try {

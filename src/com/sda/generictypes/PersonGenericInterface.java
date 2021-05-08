@@ -10,7 +10,7 @@ public class PersonGenericInterface implements Comparable<PersonGenericInterface
     }
 
     public double getHeight() {
-        return height;
+        return this.height;
     }
 
     public String getName() {
