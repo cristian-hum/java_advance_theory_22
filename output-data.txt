@@ -1,0 +1,5 @@
+Principiile OOP
+Incapsulare
+Mostenire
+Abstractizare
+Polimorfism

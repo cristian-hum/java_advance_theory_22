@@ -11,7 +11,7 @@ public class FileReader {
         int position = 0;
 
         try{
-            File file = new File("personal data.txt");
+            File file = new File("Resources/personal data.txt");
             Scanner scanner = new Scanner(file);
             while(scanner.hasNextLine()){
                 String data = scanner.nextLine();

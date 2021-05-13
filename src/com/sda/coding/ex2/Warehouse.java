@@ -13,6 +13,7 @@ public class Warehouse {
         this.inventory.put(item, qty);
     }
 
+
     public void displayAllItems() {
         System.out.println("-----\ndisplayAllItems");
         this.inventory.forEach((k, v) -> System.out.println(k + " " + v + " pcs"));
@@ -141,7 +142,7 @@ public class Warehouse {
                 break;
             case -1, 1:
                 qty = sens * cantitate;
-                updateItemQuantity(chosenItem, this.inventory.get(chosenItem)+qty);
+                updateItemQuantity(chosenItem, this.inventory.get(chosenItem) + qty);
                 break;
             default:
                 System.out.println("Something went wrong111");
