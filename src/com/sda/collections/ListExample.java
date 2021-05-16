@@ -1,6 +1,8 @@
 package com.sda.collections;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Iterator;
 import java.util.List;
 
 public class ListExample {
@@ -14,6 +16,7 @@ public class ListExample {
         }
         System.out.println();
 
+
 //        Student student = new Student();
 //        student.sayHello();
 
@@ -22,6 +25,7 @@ public class ListExample {
         iPerson.sayHello();
 
         List<String> stringList = new ArrayList<>();
+
 
 
 

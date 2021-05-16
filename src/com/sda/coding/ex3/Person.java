@@ -12,10 +12,6 @@ public class Person {
         System.out.println("Person class constructor called");
     }
 
-    public void eats(String ceva)  {
-        System.out.println("Munch Munch");
-    }
-
     public String getName() {
         return name;
     }
@@ -42,8 +38,10 @@ public class Person {
 
     @Override
     public String toString() {
-        return "Person{ " +
+        return "Person{" +
                 "name='" + name + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", phoneNumber='" + phoneNumber + '\'' +
                 '}';
     }
 }

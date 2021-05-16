@@ -2,26 +2,34 @@ package com.sda.coding.ex3;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.List;
 import java.util.Scanner;
 
+/**
+ * 3. Personal information
+ * a. Create a file containing any personal data (name, surname, phone number). Data of
+ * individual persons should be in the following lines.
+ * b. Download data from a file and create objects of people based on them (in any way -
+ * Regex, String.split ...).
+ * c. Enter the created objects into ArrayList or Map (<line number>: <Person>).
+ * d. Present the obtained data.
+ */
+
 public class FileReader {
-    public static void main(String[] args) {
-
-        String[] listaPersoane = new String[10];
-        int position = 0;
-
+    public static void main(String[] args)  {
         try{
-            File file = new File("Resources/personal data.txt");
-            Scanner scanner = new Scanner(file);
-            while(scanner.hasNextLine()){
-                String data = scanner.nextLine();
-                System.out.println(data);
-                listaPersoane[position] = data;
-                position++;
+            List<String> fileLines = Files.readAllLines(Paths.get("personal_data.txt"));
+            for (String line : fileLines) {
+                System.out.println(line);
             }
-        }catch (FileNotFoundException e){
-            System.out.println("File not found");
-            e.printStackTrace();
+
+        }catch (Exception e){
+            System.out.println(e.getMessage());
         }
+
+
     }
 }
